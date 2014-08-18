@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="nottyApp">
+<head>
+    <title>Demo page for Angular Noty</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
+    <script type="text/javascript" src="angular-noty.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+    <style type="text/css">
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: #acaacc;
+            height: 100%;
+        }
+        .container {
+            background: #fff;
+            width: 800px;
+            margin: 0 auto;
+            height: 100%;
+            padding: 10px 5%;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            background: #3687c1;
+            color: white;
+            vertical-align: middle;
+            margin: 10px 0;
+            border: 1px #acacac solid;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" ng-controller="AppCtrl">
+    <p>Test notty notifications</p>
+    <div class="btn" ng-click="showNotification()">Show notty</div>
+    <div class="btn" ng-click="closeAll()">Close all</div>
+</div>
+</body>
+</html>

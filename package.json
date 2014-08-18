@@ -1,0 +1,23 @@
+{
+  "name": "angular-noty",
+  "version": "0.0.0",
+  "description": "Angular wrapper for noty ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/azadorozhniy/angular-noty.git"
+  },
+  "author": "https://github.com/azadorozhniy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azadorozhniy/angular-noty/issues"
+  },
+  "homepage": "https://github.com/azadorozhniy/angular-noty",
+  "devDependencies": {
+    "gulp": "~3.8.7",
+    "gulp-connect": "~2.0.6"
+  }
+}
