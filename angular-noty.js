@@ -14,7 +14,7 @@
 						callNoty({text: message || settings.text, type: type || settings.type});
 					},
 
-					showAlert : function(message){
+					showAlert: function (message) {
 						callNoty({text: message || settings.text, type: "alert"});
 					},
 
