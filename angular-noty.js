@@ -5,7 +5,7 @@
 			settings: $.noty.defaults,
 			$get: function () {
 				var callNoty = function (newSettings) {
-					return noty(angular.extend(newSettings, provider.settings));
+					return noty(angular.extend({}, provider.settings, newSettings));
 				};
 
 				return {
@@ -14,7 +14,7 @@
 					},
 
 					showAlert: function (message) {
-						callNoty({text: message || provider.settings.text, type: "alert"});
+						callNoty({text: message || provider.settings.text, type: "warning"});
 					},
 
 					showSuccess: function (message) {

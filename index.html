@@ -7,8 +7,8 @@
     <script type="text/javascript" src="bower_components/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
     <script type="text/javascript" src="angular-noty.js"></script>
     <script type="text/javascript" src="demo.js"></script>
-    <style type="text/css">
-
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css"/>
+    <style>
         html {
             height: 100%;
         }
@@ -42,8 +42,10 @@
 </head>
 <body>
 <div class="container" ng-controller="AppCtrl">
-    <p>Test notty notifications</p>
-    <div class="btn" ng-click="showNotification()">Show notty</div>
+    <h2>Test notty notifications</h2>
+    <div class="btn" ng-click="showNotification()">Show noty</div>
+    <div class="btn" ng-click="showAlert()">Warning</div>
+    <div class="btn" ng-click="showError()">Error</div>
     <div class="btn" ng-click="closeAll()">Close all</div>
 </div>
 </body>
