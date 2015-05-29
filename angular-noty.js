@@ -1,29 +1,28 @@
 (function (angular, $) {
+	'use strict';
 	return angular.module('notyModule', []).provider('noty', function () {
-		var settings = $.noty.defaults;
-
-		return {
-			settings: settings,
+		var provider = {
+			settings: $.noty.defaults,
 			$get: function () {
 				var callNoty = function (newSettings) {
-					return noty(newSettings || {});
+					return noty(angular.extend(newSettings, provider.settings));
 				};
 
 				return {
 					show: function (message, type) {
-						callNoty({text: message || settings.text, type: type || settings.type});
+						callNoty({text: message || provider.settings.text, type: type || provider.settings.type});
 					},
 
 					showAlert: function (message) {
-						callNoty({text: message || settings.text, type: "alert"});
+						callNoty({text: message || provider.settings.text, type: "alert"});
 					},
 
 					showSuccess: function (message) {
-						callNoty({text: message || settings.text, type: "success"});
+						callNoty({text: message || provider.settings.text, type: "success"});
 					},
 
 					showError: function (message) {
-						callNoty({text: message, type: "error"});
+						callNoty({text: message || provider.settings.text, type: "error"});
 					},
 
 					closeAll: function () {
@@ -36,5 +35,6 @@
 			}
 
 		};
+		return provider;
 	})
 }(angular, jQuery));
