@@ -29,6 +29,11 @@
 					closeAll: function () {
 						return $.noty.closeAll()
 					},
+
+					call: function(obj) {
+						callNoty(obj);
+					},
+
 					clearShowQueue: function () {
 						return $.noty.clearQueue();
 					}.bind(this)

@@ -32,5 +32,24 @@
 			$scope.closeAll = function () {
 				noty.closeAll()
 			};
+
+			$scope.prompt = function () {
+				noty.call({
+					text: 'Are you sure you want to delete ITEM?',
+					buttons: [
+						{
+							addClass: 'btn btn-primary', text: 'Yes, delete', onClick: function($noty) {
+								$scope.delete(item);
+								noty.closeAll();
+							}
+						},
+						{
+							addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
+								noty.closeAll();
+							}
+						}
+					]
+				});
+			}
 		});
 	})();
