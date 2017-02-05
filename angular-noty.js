@@ -26,15 +26,15 @@
 					},
 
 					closeAll: function () {
-						return $.noty.closeAll()
+						return $.noty.closeAll();
 					},
 					clearShowQueue: function () {
 						return $.noty.clearQueue();
 					}.bind(this)
-				}
+				};
 			}
 
 		};
 		return provider;
-	})
+	});
 }(angular, jQuery));

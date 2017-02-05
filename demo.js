@@ -3,9 +3,9 @@
 	angular.module('nottyApp', ['notyModule'])
 		.config(function (notyProvider) {
 			notyProvider.settings = {
-				theme: 'relax',
+				theme: 'metroui',
 				text: 'Custom default message',
-				layout: 'topCenter',
+				layout: 'topRight',
 				force: true,
 				easing: 'swing',
 				timeout: 5000,
@@ -20,15 +20,15 @@
 			$scope.showNotification = function () {
 				noty.show('Test message','information');
 			};
-			
+
 			$scope.showAlert = function () {
 				noty.showAlert('Alert!')
 			};
-			
+
 			$scope.showError = function () {
 				noty.showError('Test message');
 			};
-			
+
 			$scope.closeAll = function () {
 				noty.closeAll()
 			};

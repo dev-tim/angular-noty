@@ -16,9 +16,9 @@
     "url": "https://github.com/azadorozhniy/angular-noty/issues"
   },
   "homepage": "https://github.com/azadorozhniy/angular-noty",
-  "devDependencies": {
-    "gulp": "~3.8.7",
-    "gulp-connect": "~2.0.6",
-    "gulp-concat": "~2.3.4"
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0"
   }
 }
