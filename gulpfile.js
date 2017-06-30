@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('scripts', function() {
-	gulp.src(['bower_components/noty/js/noty/packaged/jquery.noty.packaged.min.js','./angular-noty.js'])
+	gulp.src(['./angular-noty.js'])
 			.pipe(concat('angular-noty.dist.js'))
 			.pipe(gulp.dest('dist'))
 });

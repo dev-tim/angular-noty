@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="nottyApp">
+
 <head>
     <title>Demo page for Angular Noty</title>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -7,16 +8,18 @@
     <script type="text/javascript" src="bower_components/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
     <script type="text/javascript" src="angular-noty.js"></script>
     <script type="text/javascript" src="demo.js"></script>
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css"/>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <style>
         html {
             height: 100%;
         }
 
         body {
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
             background: #acaacc;
             height: 100%;
         }
+
         .container {
             background: #fff;
             width: 800px;
@@ -37,16 +40,17 @@
             padding: 5px;
             cursor: pointer;
         }
-
     </style>
 </head>
+
 <body>
-<div class="container" ng-controller="AppCtrl">
-    <h2>Test notty notifications</h2>
-    <div class="btn" ng-click="showNotification()">Show noty</div>
-    <div class="btn" ng-click="showAlert()">Warning</div>
-    <div class="btn" ng-click="showError()">Error</div>
-    <div class="btn" ng-click="closeAll()">Close all</div>
-</div>
+    <div class="container" ng-controller="AppCtrl">
+        <h2>Test notty notifications</h2>
+        <div class="btn" ng-click="showNotification()">Show noty</div>
+        <div class="btn" ng-click="showAlert()">Warning</div>
+        <div class="btn" ng-click="showError()">Error</div>
+        <div class="btn" ng-click="closeAll()">Close all</div>
+    </div>
 </body>
+
 </html>
